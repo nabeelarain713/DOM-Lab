@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+</head>
+<body>
+
+<p><a id="w3r" type="text/html" hreflang="en-us" rel="nofollow" target="_self"
+href="http://www.w3resource.com/">w3resource</a></p>
+
+<button onclick="getAttributes()">Click here to get attributes value</button>
+
+<script>
+function getAttributes() {
+  // Get the link element by its ID
+  var link = document.getElementById('w3r');
+
+  // Check if the link element exists
+  if (link) {
+    // Get the specified attributes
+    var href = link.getAttribute('href');
+    var hreflang = link.getAttribute('hreflang');
+    var rel = link.getAttribute('rel');
+    var target = link.getAttribute('target');
+    var type = link.getAttribute('type');
+
+    // Display the attribute values
+    alert("href: " + href + "\n" +
+          "hreflang: " + hreflang + "\n" +
+          "rel: " + rel + "\n" +
+          "target: " + target + "\n" +
+          "type: " + type);
+  } else {
+    alert("Link element not found.");
+  }
+}
+</script>
+
+</body>
+</html>
+

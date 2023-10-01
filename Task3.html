@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JS DOM paragraph style</title>
+  </head>
+  <body>
+
+    <p id="text">JavaScript Exercises - w3resource</p>
+    <div>
+      <button id="jsstyle" onclick="js_style()" >Style</button>
+    </div>
+
+    <script>
+        function js_style () {
+            let paragraph = document.getElementById('text');
+            paragraph.style.color = "red";
+            paragraph.style.fontSize = "2em";
+            paragraph.style.fontFamily = "Geneva, Verdana, sans-serif";
+            paragraph.style.backgroundColor = "lightblue";
+        }
+    </script>
+
+  </body>
+</html>
